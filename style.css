@@ -13,3 +13,37 @@ body, html {
             padding: 0;
             margin: 0;
         }
+.navbar-brand {
+    font-size: 1.5rem; /* Increase font size for better visibility */
+}
+.navbar-toggler {
+    font-size: 1.5rem; /* Increase font size for better visibility */
+}
+.navbar-nav .nav-link {
+    padding: 0.5rem 1rem; /* Increase padding for touch-friendly buttons */
+    font-size: 1.25rem; /* Increase font size for better readability */
+}
+.card-img-top {
+    max-width: 100%; /* Ensure images don't overflow on smaller screens */
+    height: auto; /* Maintain aspect ratio */
+}
+.card-title {
+    font-size: 1.25rem; /* Increase font size for better readability */
+}
+.card-text {
+    font-size: 1rem; /* Adjust font size for better readability */
+}
+.btn-lg {
+    padding: 0.75rem 1.5rem; /* Increase padding for touch-friendly buttons */
+    font-size: 1.25rem; /* Increase font size for better visibility */
+}
+.list-group-item {
+    font-size: 1rem; /* Adjust font size for better readability */
+}
+.display-4 {
+    font-size: 2.5rem; /* Increase font size for better visibility */
+}
+.lead {
+    font-size: 1.25rem; /* Increase font size for better readability */
+    line-height: 1.6; /* Adjust line height for better readability */
+}
