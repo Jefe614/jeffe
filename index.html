@@ -4,212 +4,491 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geoffrey Kimani - Portfolio</title>
-    <meta name="description" content="Experienced web developer specializing in HTML, CSS, JavaScript, Python, Django, and Bootstrap. Browse my portfolio for examples of my work.">
-    <meta name="keywords" content="web developer, HTML, CSS, JavaScript, Python, Django, Bootstrap, portfolio">
-    <link rel="icon" type="image/png" href="images/Screenshot 2024-03-16 115330.png">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet""> <!-- Your custom styles -->
+    <meta name="description" content="Experienced Full-Stack Developer specializing in Python, Django, React, and enterprise solutions.">
+    <meta name="keywords" content="Full-Stack Developer, Python, Django, React, PostgreSQL, Enterprise Solutions">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <style>
-        body, html {
-            padding: 0;
-            margin: 0;
-        }
-        .navbar-brand {
-            font-size: 1.5rem; /* Adjust as needed */
-            padding: 0.5rem 1rem; /* Adjust padding */
-            white-space: normal; /* Allow the text to wrap */
-            text-align: center; /* Center align the text */
-        }
-        .back-to-top {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            display: none;
-            z-index: 1000;
-        }
-        .navbar {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-        }
-        #hero {
-            padding-top: 100px; /* Adjust the padding as needed */
-        }
-        #projects {
-            padding-top: 80px; /* Adjust the padding as needed */
-            padding-bottom: 80px; /* Adjust the padding as needed */
-        }
-
-
+        body { font-family: 'Inter', sans-serif; }
+        .hero-gradient { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .text-gradient { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .btn-gradient { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border: none; }
+        .btn-gradient:hover { background: linear-gradient(135deg, #764ba2 0%, #667eea 100%); }
+        .card-hover:hover { transform: translateY(-10px); transition: all 0.3s ease; }
+        .tech-badge { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
     </style>
 </head>
 <body>
-
-    <header>
-        <!-- Navigation bar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">Geoffrey Kimani</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header><br>
-    
-    <section id="hero" class="bg-primary text-white py-5">
-        <!-- Hero section with a welcome message and call-to-action -->
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
         <div class="container">
-            <h1 class="display-4 text-center">Welcome to My Portfolio</h1>
-            <p class="lead text-left">Results-driven web developer with a keen analytical mindset, unwavering motivation, and a strong work ethic. Adept at designing, debugging, and troubleshooting applications using a diverse set of coding tools and languages. Eager to contribute to innovative projects and collaborate with dynamic teams to achieve technological excellence.</p>
-            <div class="text-center">
-                <a href="contact.html" class="btn btn-lg btn-light me-2">Hire Me</a>
-                <a href="Geoffrey_Kimani_curriculum vitae.pdf" download class="btn btn-lg btn-light">Download CV</a>
+            <a class="navbar-brand fw-bold fs-4 text-gradient" href="#home">Geoffrey Kimani</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link fw-medium" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="#contact">Contact</a></li>
+                </ul>
             </div>
-            <div class="mt-3 text-center">
-                <a href="mailto:jeffkimani32@gmail.com" class="text-white me-3"><i class="bx bx-envelope"></i></a>
-                <a href="tel:+254798257728" class="text-white me-3"><i class='bx bxs-phone-call'></i></a>
-                <a href="https://www.linkedin.com/in/geoffrey-kimani-277107225//" class="text-white"><i class="bx bxl-linkedin"></i></a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient text-white py-7" style="min-height: 100vh; padding-top: 100px;">
+        <div class="container h-100 d-flex align-items-center">
+            <div class="row w-100 text-center">
+                <div class="col-lg-10 mx-auto">
+                    <h1 class="display-3 fw-bold mb-4">Hi, I'm Geoffrey M. Kimani</h1>
+                    <p class="lead fs-4 mb-4 opacity-90">
+                        Versatile and accomplished Full-Stack Developer with expertise in Python, Django, React, and PostgreSQL. 
+                        I've led the development of innovative web applications, managing hosting, integrations, maintenance, security, and scalability.
+                    </p>
+                    <div class="mb-4">
+                        <a href="#contact" class="btn btn-light btn-lg px-4 py-2 me-3 fw-semibold">Let's Work Together</a>
+                        <a href="./Geoffrey M._Kimani CV.pdf" download class="btn btn-outline-light btn-lg px-4 py-2 fw-semibold">Download CV</a>
+                    </div>
+                    <div class="mt-5">
+                        <a href="mailto:jeffkimani32@gmail.com" class="btn btn-outline-light btn-lg rounded-circle me-3 p-3">
+                            <i class="bi bi-envelope-fill fs-5"></i>
+                        </a>
+                        <a href="tel:+254798257728" class="btn btn-outline-light btn-lg rounded-circle me-3 p-3">
+                            <i class="bi bi-telephone-fill fs-5"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/geoffrey-kimani-277107225/" target="_blank" class="btn btn-outline-light btn-lg rounded-circle me-3 p-3">
+                            <i class="bi bi-linkedin fs-5"></i>
+                        </a>
+                        <a href="https://github.com/geoffrey-kimani" target="_blank" class="btn btn-outline-light btn-lg rounded-circle p-3">
+                            <i class="bi bi-github fs-5"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="py-5">
-        <!-- About section with a brief introduction and skills -->
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center mb-4">About Me</h2>
-            <p class="lead text-center">I'm Geoffrey Kimani, a web developer with a passion for creating clean and modern websites. I love taking on new challenges and working collaboratively with other developers and designers to create engaging web experiences. I am always looking for new and innovative ways to improve the user experience, and am passionate about creating cutting-edge web experiences that engage and delight users.</p>
-            <hr>
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-4 fw-bold text-gradient mb-4">About Me</h2>
+                    <div class="col-lg-8 mx-auto">
+                        <p class="lead text-muted">
+                            I'm a passionate Full-Stack Developer with expertise in both backend and frontend development. 
+                            I have implemented robust user authentication systems, RESTful APIs, and designed responsive, 
+                            user-friendly interfaces. With strong project management and strategic planning skills, I excel at 
+                            collaborative problem-solving and delivering impactful solutions. Currently expanding my skills in 
+                            Machine Learning & AI while contributing to cutting-edge projects.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm border-0 card-hover">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-code-slash display-4 text-primary mb-3"></i>
+                            <h5 class="fw-bold mb-3">Frontend Development</h5>
+                            <p class="text-muted">React, Redux, HTML5, CSS3, JavaScript, Bootstrap, Tailwind CSS</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm border-0 card-hover">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-server display-4 text-primary mb-3"></i>
+                            <h5 class="fw-bold mb-3">Backend Development</h5>
+                            <p class="text-muted">Python, Django, Flask, REST APIs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm border-0 card-hover">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-database display-4 text-primary mb-3"></i>
+                            <h5 class="fw-bold mb-3">Database & DevOps</h5>
+                            <p class="text-muted">PostgreSQL, Docker, CI/CD, AWS</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm border-0 card-hover">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-git display-4 text-primary mb-3"></i>
+                            <h5 class="fw-bold mb-3">Version Control & ML</h5>
+                            <p class="text-muted">Git, GitHub, Machine Learning (TensorFlow)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm border-0 card-hover">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-briefcase display-4 text-primary mb-3"></i>
+                            <h5 class="fw-bold mb-3">Professional Skills</h5>
+                            <p class="text-muted">Project Management, Problem-solving, Team Leadership</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm border-0 card-hover">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-building display-4 text-primary mb-3"></i>
+                            <h5 class="fw-bold mb-3">Current Experience</h5>
+                            <p class="text-muted">Full-Stack Developer at VAP Technologies, Tech Lead at HatuaArt</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-4 fw-bold text-gradient mb-4">Work Experience</h2>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card h-100 shadow-sm border-0 card-hover">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-primary rounded-circle p-3 me-3">
+                                    <i class="bi bi-code-slash text-white fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold mb-1">Full-Stack Developer</h5>
+                                    <p class="text-muted mb-0">VAP Technologies • Sept 2024 - Present</p>
+                                </div>
+                            </div>
+                            <ul class="list-unstyled text-muted">
+                                <li class="mb-2">• Architected and developed enterprise-grade Supply Chain Management (SCM) system handling complex multi-warehouse inventory tracking, automated procurement workflows, and real-time analytics</li>
+                                <li class="mb-2">• Built comprehensive Human Resource Information System (HRIS) with advanced features including employee lifecycle management, payroll integration, performance tracking, and compliance reporting</li>
+                                <li class="mb-2">• Implemented scalable microservices architecture using Django REST framework, resulting in 40% improved system performance and enhanced maintainability</li>
+                                <li class="mb-2">• Designed responsive React interfaces with Redux state management, delivering seamless user experiences across web and desktop platforms</li>
+                                <li class="mb-2">• Provided comprehensive technical support to clients and end-users, troubleshooting complex issues and ensuring optimal system performance</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card h-100 shadow-sm border-0 card-hover">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-primary rounded-circle p-3 me-3">
+                                    <i class="bi bi-laptop text-white fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold mb-1">Software Engineer</h5>
+                                    <p class="text-muted mb-0">Cloudoon Inc. • Mar 2024 - Aug 2024</p>
+                                </div>
+                            </div>
+                            <ul class="list-unstyled text-muted">
+                                <li class="mb-2">• Developed high-performance Python applications with optimized algorithms and clean, maintainable code following industry best practices</li>
+                                <li class="mb-2">• Led research initiatives for innovative solutions, prototyping cutting-edge technologies and evaluating their feasibility for production implementation</li>
+                                <li class="mb-2">• Collaborated effectively with cross-functional teams including developers, UX designers, and business analysts to deliver user-centric solutions</li>
+                                <li class="mb-2">• Implemented comprehensive system monitoring and performance evaluation frameworks, ensuring optimal application reliability and scalability</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card h-100 shadow-sm border-0 card-hover">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-primary rounded-circle p-3 me-3">
+                                    <i class="bi bi-globe text-white fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold mb-1">Freelance Web Developer</h5>
+                                    <p class="text-muted mb-0">Independent • May 2023 - Feb 2024</p>
+                                </div>
+                            </div>
+                            <ul class="list-unstyled text-muted">
+                                <li class="mb-2">• Delivered custom web solutions for diverse clients, specializing in e-commerce platforms, business websites, and web applications</li>
+                                <li class="mb-2">• Actively participated in coding communities and contributed to open-source projects on GitHub, building a strong professional network</li>
+                                <li class="mb-2">• Stayed current with emerging web development trends and technologies through continuous learning and professional development</li>
+                                <li class="mb-2">• Managed complete project lifecycles from requirements gathering to deployment, ensuring timely delivery and client satisfaction</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card h-100 shadow-sm border-0 card-hover">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-primary rounded-circle p-3 me-3">
+                                    <i class="bi bi-star text-white fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold mb-1">Co-Founder & Tech Lead</h5>
+                                    <p class="text-muted mb-0">HatuaArt • Ongoing</p>
+                                </div>
+                            </div>
+                            <ul class="list-unstyled text-muted">
+                                <li class="mb-2">• Leading the technical vision and development of innovative web applications, driving product strategy and technology roadmap</li>
+                                <li class="mb-2">• Managing comprehensive DevOps operations including cloud hosting, third-party integrations, system maintenance, and security protocols</li>
+                                <li class="mb-2">• Architecting scalable platform infrastructure capable of handling growing user base and increasing data volumes</li>
+                                <li class="mb-2">• Overseeing strategic planning, technical decision-making, and team coordination to ensure successful product development and market launch</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-4 fw-bold text-gradient mb-4">Key Projects</h2>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card h-100 shadow-sm border-0 card-hover">
+                        <img src="./images/image copy.png" alt="Fashion Ecommerce" class="card-img-top">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold mb-3">Enterprise Fashion E-commerce Platform</h5>
+                            <p class="text-muted mb-3">
+                                Architected and developed a comprehensive e-commerce solution featuring advanced inventory management, 
+                                multi-vendor support, integrated payment gateways, and real-time analytics dashboard. Implemented 
+                                sophisticated product recommendation engine using machine learning algorithms, resulting in 35% increase 
+                                in sales conversion rates. Built with Django backend, React frontend, PostgreSQL database, and deployed 
+                                on AWS with auto-scaling capabilities.
+                            </p>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge tech-badge text-white px-3 py-2">Django</span>
+                                <span class="badge tech-badge text-white px-3 py-2">React</span>
+                                <span class="badge tech-badge text-white px-3 py-2">PostgreSQL</span>
+                                <span class="badge tech-badge text-white px-3 py-2">AWS</span>
+                                <span class="badge tech-badge text-white px-3 py-2">ML</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card h-100 shadow-sm border-0 card-hover">
+                        <img src="./images/image.png" alt="Hospital Management" class="card-img-top">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold mb-3">Comprehensive Hospital Management System</h5>
+                            <p class="text-muted mb-3">
+                                Developed a full-featured Hospital Management System handling patient registration, appointment scheduling, 
+                                electronic medical records, billing and insurance processing, pharmacy management, and staff coordination. 
+                                Integrated with laboratory systems and medical imaging platforms. Features include role-based access control, 
+                                HIPAA compliance, automated reporting, and mobile-responsive interface. Reduced administrative overhead by 50% 
+                                and improved patient satisfaction scores significantly.
+                            </p>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge tech-badge text-white px-3 py-2">Python</span>
+                                <span class="badge tech-badge text-white px-3 py-2">Django</span>
+                                <span class="badge tech-badge text-white px-3 py-2">Bootstrap</span>
+                                <span class="badge tech-badge text-white px-3 py-2">MySQL</span>
+                                <span class="badge tech-badge text-white px-3 py-2">API Integration</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card h-100 shadow-sm border-0 card-hover">
+                        <img src="https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=400&h=200&fit=crop" alt="Chat Application" class="card-img-top">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold mb-3">Real-time Enterprise Chat Application</h5>
+                            <p class="text-muted mb-3">
+                                Built a scalable real-time messaging platform supporting thousands of concurrent users with features including 
+                                group chats, file sharing, video calls, screen sharing, and message encryption. Implemented WebSocket connections 
+                                for instant messaging, push notifications, offline message queuing, and user presence indicators. Features advanced 
+                                search capabilities, message threading, and comprehensive admin controls. Deployed using Docker containers with 
+                                Redis for caching and message brokering.
+                            </p>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge tech-badge text-white px-3 py-2">React</span>
+                                <span class="badge tech-badge text-white px-3 py-2">Node.js</span>
+                                <span class="badge tech-badge text-white px-3 py-2">WebSocket</span>
+                                <span class="badge tech-badge text-white px-3 py-2">Redis</span>
+                                <span class="badge tech-badge text-white px-3 py-2">Docker</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card h-100 shadow-sm border-0 card-hover">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=200&fit=crop" alt="Supply Chain Management" class="card-img-top">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold mb-3">Enterprise Supply Chain Management System</h5>
+                            <p class="text-muted mb-3">
+                                Architected a comprehensive SCM solution managing complex multi-warehouse operations, automated procurement 
+                                workflows, supplier relationship management, and real-time inventory tracking across multiple locations. 
+                                Integrated predictive analytics for demand forecasting, automated reordering systems, and comprehensive 
+                                reporting dashboards. Built with microservices architecture supporting both web and desktop applications. 
+                                Improved operational efficiency by 45% and reduced inventory costs by 30%.
+                            </p>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge tech-badge text-white px-3 py-2">Django</span>
+                                <span class="badge tech-badge text-white px-3 py-2">Microservices</span>
+                                <span class="badge tech-badge text-white px-3 py-2">PostgreSQL</span>
+                                <span class="badge tech-badge text-white px-3 py-2">Analytics</span>
+                                <span class="badge tech-badge text-white px-3 py-2">Desktop App</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="card shadow-sm border-0 card-hover">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=300&fit=crop" alt="Sales Management System" class="card-img-top">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold mb-3">Advanced Sales Management & CRM System</h5>
+                            <p class="text-muted mb-3">
+                                Enhanced and scaled an existing sales management platform to handle high-volume data processing with advanced 
+                                CRM capabilities including lead tracking, opportunity management, sales pipeline automation, and comprehensive 
+                                analytics. Implemented automated email marketing, customer segmentation, sales forecasting, and performance 
+                                tracking dashboards. Integrated with multiple third-party services including payment processors, email platforms, 
+                                and accounting systems. Optimized database queries and implemented caching strategies, resulting in 60% performance 
+                                improvement and ability to handle 10x more concurrent users.
+                            </p>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge tech-badge text-white px-3 py-2">Django</span>
+                                <span class="badge tech-badge text-white px-3 py-2">React</span>
+                                <span class="badge tech-badge text-white px-3 py-2">PostgreSQL</span>
+                                <span class="badge tech-badge text-white px-3 py-2">Redis</span>
+                                <span class="badge tech-badge text-white px-3 py-2">API Integration</span>
+                                <span class="badge tech-badge text-white px-3 py-2">Performance Optimization</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 hero-gradient text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-4 fw-bold mb-4">Get In Touch</h2>
+                    <p class="lead">Ready to start your next project? Let's work together to bring your ideas to life!</p>
+                    <div class="mt-4">
+                        <a href="mailto:jeffkimani32@gmail.com" class="btn btn-outline-light btn-lg rounded-circle me-3 p-3">
+                            <i class="bi bi-envelope-fill fs-5"></i>
+                        </a>
+                        <a href="tel:+254798257728" class="btn btn-outline-light btn-lg rounded-circle me-3 p-3">
+                            <i class="bi bi-telephone-fill fs-5"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/geoffrey-kimani-277107225/" target="_blank" class="btn btn-outline-light btn-lg rounded-circle p-3">
+                            <i class="bi bi-linkedin fs-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contact Form -->
             <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <h3 class="text-center mb-3">Skills</h3>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">HTML5 <i class='bx bxl-html5'></i></li>
-                        <li class="list-group-item">CSS3 <i class='bx bxl-css3'></i></li>
-                        <li class="list-group-item">JavaScript <i class='bx bxl-javascript'></i></li>
-                        <li class="list-group-item">Python <i class='bx bxl-python'></i></li>
-                        <li class="list-group-item">Django <i class='bx bxl-django' ></i></li>
-                        <li class="list-group-item">API Development: REST</li>
-                        <li class="list-group-item">Version Control Tools: GitHub <i class='bx bxl-github'></i></li>
-                        <li class="list-group-item">Bootstrap Libraries <i class='bx bxl-bootstrap' ></i></li>
-                        <li class="list-group-item">Database Systems [PostgreSQL] <i class='bx bxl-postgresql' ></i></li>
-                        <!-- Add more skills here -->
-                    </ul>
+                <div class="col-lg-8">
+                    <div class="card bg-white bg-opacity-10 border-0 backdrop-blur">
+                        <div class="card-body p-5">
+                            <form id="contactForm">
+                                <div class="row mb-3">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="name" class="form-label">Full Name</label>
+                                        <input type="text" class="form-control form-control-lg" id="name" name="name" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="email" class="form-label">Email Address</label>
+                                        <input type="email" class="form-control form-control-lg" id="email" name="email" required>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="phone" class="form-label">Phone Number</label>
+                                        <input type="tel" class="form-control form-control-lg" id="phone" name="phone">
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="service" class="form-label">Service Needed</label>
+                                        <select class="form-select form-select-lg" id="service" name="service" required>
+                                            <option value="">Select Service</option>
+                                            <option value="web-development">Web Development</option>
+                                            <option value="mobile-development">Mobile Development</option>
+                                            <option value="enterprise-solutions">Enterprise Solutions</option>
+                                            <option value="consulting">Consulting</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="message" class="form-label">Project Details</label>
+                                    <textarea class="form-control form-control-lg" id="message" name="message" rows="5" required></textarea>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-light btn-lg px-5 py-3 fw-semibold">
+                                        <i class="bi bi-send me-2"></i>Send Message
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <hr>
 
-    <section id="projects" class="bg-light py-5">
-        <!-- Projects section with project cards -->
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 text-center">
         <div class="container">
-            <h2 class="text-center mb-4">Projects</h2>
-            <div class="row gx-4 gy-4 justify-content-center">
-                <div class="col-md-6 col-lg-4">
-                    <div class="card">
-                        <img src="images/ecom.png" alt="Project 1" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Ecommerce Website</h5>
-                            <a href="project1.html" class="btn btn-primary">View Project</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card">
-                        <img src="images/ticket1.png" alt="Project 2" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Ticket Selling Platform</h5>
-                            <a href="project2.html" class="btn btn-primary">View Project</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card">
-                        <img src="images/weather app.png" alt="Project 3" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Weather App</h5>
-                            <a href="project3.html" class="btn btn-primary">View Project</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card">
-                        <img src="images/Screenshot 2023-06-26 095350.png" alt="Project 4" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Internet Solutions</h5>
-                            <a href="project4.html" class="btn btn-primary">View Project</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card">
-                        <img src="images/chatapp.jpg" alt="Project 5" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">ChatApp</h5>
-                            <a href="project5.html" class="btn btn-primary">View Project</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card">
-                        <img src="images/gym.jpg" alt="Project 6" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">GYM management system</h5>
-                            <a href="project6.html" class="btn btn-primary">View Project</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <p class="mb-0">Created with <i class="bi bi-heart-fill text-danger"></i> by Geoffrey Kimani &copy; 2025</p>
         </div>
-    </section>
-     
-
-    <footer class="bg-dark text-white py-4">
-        <div class="container text-center">
-            <p>Created with <i class="bx bxs-heart text-danger"></i> by Geoffrey Kimani</p>
-        </div>
-        <button class="btn btn-primary back-to-top" onclick="scrollToTop()" id="back-to-top-btn">
-        <i class='bx bxs-arrow-to-top'>Top</i>
-    </button>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button class="btn btn-gradient position-fixed bottom-0 end-0 m-4 rounded-circle p-3 d-none" id="backToTop" style="z-index: 1000;">
+        <i class="bi bi-arrow-up fs-5 text-white"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
     <script>
-        // Function to scroll back to the top of the page
-        function scrollToTop() {
+        // Back to top functionality
+        const backToTopBtn = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.remove('d-none');
+            } else {
+                backToTopBtn.classList.add('d-none');
+            }
+        });
+        
+        backToTopBtn.addEventListener('click', () => {
             window.scrollTo({
                 top: 0,
-                behavior: "smooth"
+                behavior: 'smooth'
             });
-        }
+        });
 
-        // Show or hide the back to top button based on scroll position
-        window.onscroll = function() {
-            var button = document.getElementById("back-to-top-btn");
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                button.style.display = "block";
-            } else {
-                button.style.display = "none";
-            }
-        };
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    <!-- Add any additional scripts here -->
-
-</body>
-</html>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
